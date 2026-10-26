@@ -1,33 +1,43 @@
-# AI Weekend Trip Planner ✈️🗺️
+# AI Smart Weekend Trip Planner ✈️🗺️
 
-An AI-powered weekend trip planner that creates personalized itineraries from a user's destination, interests, budget, and constraints.
+An intelligent multi-agent weekend trip planner that takes user preferences, budget, and constraints, and generates a personalized day-by-day travel itinerary with estimated costs and transparent reasoning.
 
-## Version 1.0
+## 🚀 Version 1.0 Features
 
-- **Preference form:** Enter a destination, trip length, budget in NIS, interests, and constraints such as minimal walking.
-- **Personalized itinerary:** Get a day-by-day plan with activities, suggested order, estimated costs, and explanations.
-- **Curated activity catalogue:** The planner uses local sample data, so no external API is needed for the first version.
-- **Editable results:** Review the plan and request changes.
+* **User Preference Form:** Input your destination, duration, budget, interests (e.g., nature, food, culture), and constraints (e.g., minimal walking).
+* **AI Trip Generation:** Backend logic processes constraints to assemble an optimized daily schedule with recommended order and estimated costs.
+* **Mock Database:** Built-in curated database of locations to test and validate itineraries without external API dependencies.
+* **Interactive Flow:** Fill out preferences -> Send to server -> Receive structured itinerary.
 
-## Tech Stack
+---
 
-- **Frontend:** React
-- **Backend:** Node.js and Express
-- **Database:** MongoDB, planned for saving user profiles and itineraries
+## 🛠️ Tech Stack
 
-## How the Planner Works
+* **Frontend:** React (Form input and itinerary display UI)
+* **Backend:** Node.js, Express (REST API and agent orchestration logic)
+* **Database:** MongoDB (Planned for user profiles and saved itineraries storage)
 
-1. The server validates the user's preferences and constraints.
-2. The AI agent searches the activity catalogue for suitable options.
-3. The server checks the proposed itinerary against the budget and other rules.
-4. The agent explains why the activities fit the user's preferences.
+---
 
-## Example
+## 🔄 Core Agent Workflow
 
-**Input:** A two-day trip, budget up to 500 NIS, interests in nature and food, and minimal walking.
+1. **Intake & Validation:** Receives destination, days, budget cap, interests, and physical constraints.
+2. **Filtering & Matching:** Filters the local repository of activities against user constraints (e.g., budget limits, low-walking options).
+3. **Itinerary Assembly:** Sequences activities logically by day and time, calculating total estimated costs.
+4. **Explanation Layer:** Generates clear reasoning for why each activity was chosen based on the user's profile.
 
-**Output:** A suggested two-day itinerary with suitable activities, estimated costs, and a short explanation for each choice.
+---
 
-## Getting Started
+## 🎯 Example Scenario
 
-Setup instructions will be added as development progresses.
+* **Input:** 
+  * Budget: Up to 500 NIS
+  * Constraints: Minimal walking
+  * Interests: Nature & Food
+* **Output:** A customized weekend plan featuring low-walking scenic spots and budget-friendly local dining, complete with cost breakdowns and rationale.
+
+---
+
+## 📦 Getting Started (Coming Soon)
+
+Instructions for setting up and running the project locally will be added as development progresses.
